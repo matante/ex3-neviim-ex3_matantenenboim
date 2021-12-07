@@ -332,6 +332,7 @@ const APIKEY = "GlDtOhfxcpLXGEcCNa7VXgCchnlAJXIpFigptnse";
 
                 }).catch(() => { // failed, no api returned
                 ModalsModule.popAModal("Network Error", "Could not retrieve data", "NASA servers are not available right now, please try again later.");
+                spinner.classList.add("d-none"); // remove the loading gif
 
             });
 
